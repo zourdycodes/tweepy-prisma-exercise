@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Hello: React.FC = () => {
+export const TimelineTweet: React.FC = () => {
   return (
     <div>
       <h1>hello world</h1>

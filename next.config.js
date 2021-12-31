@@ -2,4 +2,5 @@
 
 module.exports = {
   reactStrictMode: true,
+  images: ['abs.twimg.com'],
 };

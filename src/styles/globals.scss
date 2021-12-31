@@ -1,5 +1,5 @@
-$border__color: #454b50;
-$blue__color: #1da1f2;
+// @import url('../components/TweetForm/TweetForm.scss');
+// @import url('../components/TImelineTweet/TimelineTweet.sass');
 
 *,
 *::before,
@@ -37,7 +37,87 @@ svg {
 .timeline__container {
   max-width: 600px;
   margin: 0 auto;
-  border-color: $border__color;
+  border-color: #454b50;
   border-style: solid;
   border-width: 0 1px 0 1px;
+}
+
+.timeline__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #454b50;
+
+  &--title {
+    line-height: 53px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+.svg__wrapper {
+  width: 22px;
+  height: 22px;
+  svg {
+    fill: #1da1f2;
+  }
+}
+
+.divider {
+  height: 12px;
+  background-color: rgb(21 24 28);
+  border-bottom: 1px solid #454b50;
+}
+
+.tweet__form--container {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  border-bottom: 1px solid #454b50;
+
+  .left__column {
+    margin-right: 12px;
+
+    .profile__photo {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+
+      &--img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .right__column {
+    flex-grow: 1;
+    input {
+      color: white;
+      background-color: black;
+      outline: none;
+      border: none;
+      width: 100%;
+      font-size: 20px;
+      margin: 16px 0;
+    }
+    .btn__submit {
+      text-align: right;
+      width: 100%;
+
+      button {
+        padding: 0 16px;
+        line-height: 38px;
+        color: white;
+        background-color: #1da1f2;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 19px;
+      }
+    }
+  }
 }
